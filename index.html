@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="scripts.js"></script>
+  <script src="scripts.js" defer></script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +9,18 @@
   <title>Travel Book</title>
 </head>
 <body>
-  <form>
-  <img src="imgs/madrid.jpg" alt="A pic of madrid"> 
-
-  <img src="imgs/moscow.jpg" alt="A pic of moscow">
-
-  <img src="imgs/sydney.jpg" alt="A pic of sydney">
+  <form id="select-form">
+    <select id="destination">
+      <option>Madrid</option>
+      <option>Moscow</option>
+      <option>Sydney</option>
+    </select>
+    <button type="submit">Travel with us</button>
   </form>
+  <img class="hidden" id="madrid" src="imgs/madrid.jpg" alt="A pic of madrid"> 
+
+  <img class="hidden" id="moscow" src="imgs/moscow.jpg" alt="A pic of moscow">
+  
+  <img class="hidden" id="sydney" src="imgs/sydney.jpg" alt="A pic of sydney">
 </body>
 </html>
